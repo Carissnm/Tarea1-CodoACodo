@@ -386,6 +386,8 @@ footer {
 
 
 
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
@@ -551,5 +553,9 @@ footer {
 .li-dropdown {
     margin: 0.8em;
     text-transform: uppercase;
+}
+
+.redes {
+    width: 2.6em;
 }
 
