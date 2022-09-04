@@ -135,6 +135,12 @@ html {
     margin-right: 1em;
     border: 1px white solid;
     color: white;
+    transition: 0.5s;
+}
+
+.ser-orador:hover {
+    transition: 0.5s;
+    background-color: #3F3930;
 }
 
 .ser-orador a {
@@ -266,6 +272,14 @@ html {
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    transition: 0.5s;
+}
+
+.conoce-mas-hawaii:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #353A40; 
+    font-weight: 600;
 }
 
 /* SECCIÓN FORMULARIO */
