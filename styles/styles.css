@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Poppins:wght@300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #3F3930;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.4em;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 0.9em;
+    width: 50%;
+    font-weight: 500;
+}
+/* Imagen del logo ppal de la página y navbar */
+.logo-principal{
+    display: flex;
+    align-items: center;
+    width: 30em;
+}
+.logo-principal img {
+    width: 6em;
+    margin-left: 1.3em;
+}
+
+/* Dropdown sólo habilitado durante modo mobile */
+.dropdown-lista {
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+
+/* Links del navbar */
+.lista-navbar {
+    width: 50%;
+}
+.contenedor-lista-navbar {
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-lista-navbar li {
+    margin-right: 1em;
+}
+
+.contenedor-lista-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+.item-en-negrita {
+    font-weight: 600;
+}
+
+.item-en-verde {
+    color: #498C5C;
+}
+
+/* SECCIÓN BANNER DE MAIN*/
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/ba1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-banner {
+    color: white;
+    width: 30em;
+    text-align: right;
+    padding: 1.3em;
+}
+
+.titulo-banner {
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.contenido-banner {
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+/* Botonera Banner */
+.botonera-banner {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 1em;
+}
+
+.ser-orador,
+.comprar-banner,
+.conoce-mas-hawaii {
+    padding: 0.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+.comprar-banner {
+    border: 1px solid #29A744;
+    background-color: #29A744;
+    color: white;
+    transition: 0.5s;
+}
+
+.comprar-banner:hover {
+    transition: 0.5s;
+    background-color: #44c760;
+}
+
+.ser-orador {
+    background: transparent;
+    margin-right: 1em;
+    border: 1px white solid;
+    color: white;
+}
+
+.ser-orador a {
+    text-decoration: none;
+    color: white;
+}
+
+/* SECCIÓN CARDS */
+    #conoce-oradores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .parrafo-pequeno {
+        font-size: 0.7em;
+        margin-bottom: 0.4em;
+    }
+
+    .parrafo-resaltado {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .card {
+        border: 1px solid #cfcfcf;
+        width: 95%;
+        margin: 1em;
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    .imagen-card {
+        width: 100%;
+
+    }
+
+    .card-info {
+        padding: 1.2em;
+    }
+
+/* parrafo info */
+    .info-card {
+        font-size: 0.8em;
+        line-height: 1.7em;
+    }
+
+    .titulo-card {
+        margin-top: 0.2em;
+        margin-bottom: 0.5em;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+
+    .javascript,
+    .react,
+    .negocios,
+    .startups {
+        border: none;
+        font-size: 0.8;
+        padding: 0.25em;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .javascript {
+        background-color: #FEC109;
+    }
+
+    .react {
+        color: white;
+        background-color: #1AA2B7;
+    }
+
+    .negocios {
+        background-color: #6C757C;
+        color: white;
+    }
+
+    .startups {
+        background-color: #DA3443;
+        color: white;
+    }
+
+/* SECCIÓN INFO HAWAII */
+#info-bsas {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-hawaii {
+    display: flex;
+}
+.imagen-hawaii img {
+    width: 100%;
+}
+
+.contenido-hawaii {
+    background-color: #353A40;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.contenido-hawaii h3 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.parrafo-hawaii {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+.conoce-mas-hawaii {
+    margin-top: 1.5em;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* SECCIÓN FORMULARIO */
+
+#form-orador {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo-pequeno {
+    font-size: 0.6em;
+}
+
+.parrafo-resaltado {
+    font-size: 1.7em;
+}
+.parrafo-form {
+    font-size: 0.7em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.charla-ignite {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 80%;
+}
+
+.inputs {
+    margin-bottom: 0.8em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs input {
+    padding: 0.35em;
+    width: 47%;
+    border: 1px solid #8F8F9D;
+    border-radius: 4px;
+}
+
+textarea {
+    padding: 0.35em;
+    resize: none;
+}
+
+.texto-final-form {
+    font-size: 0.65em;
+    margin-top: 0.2em;
+    margin-bottom: 1.5em;
+}
+
+.btn-formulario {
+    background-color: #96C93E;
+    color: white;
+    border: none;
+    padding: 0.6em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+.btn-formulario:hover {
+    transition: 0.5s;
+    background-color: #71972e;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(29,69,91,1) 50%, rgba(30,82,113,1) 100%);
+    padding: 1.5em;
+}
+
+.lista-footer {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-footer li {
+    margin: 0.8em;
+    display: flex;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75em;
+    text-align: center;
+    background-color: none;
+}
+
+/* BOTÓN UP */
+.arriba {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    background-color: #fec109e1;
+    padding: 0.7em;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+    .logo-principal h1 {
+        font-size: 1.2em;
+    }
+
+    .lista-navbar {
+        display: none;
+    }
+
+    .dropdown-lista {
+        margin-right: 1em;
+    }
+
+    .info-banner {
+        margin-right: 0.5em;
+    }
+
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .lista-navbar {
+        display: none;
+    }
+
+    .logo-principal h1 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .lista-navbar {
+        display: none;
+    }
+
+    .banner {
+        justify-content: right;
+    }
+
+    .info-banner {
+        margin-right: 6em;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .imagen-card {
+        height: 25vw;
+        object-fit: cover;
+    }
+
+    #info-bsas {
+        flex-direction: row;
+    }
+
+    .imagen-hawaii {
+        width: 50%;
+    }
+
+    .contenido-hawaii {
+        width: 50%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    footer {
+        padding: 0.5em;
+    }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .dropdown-lista {
+        display: none;
+    }
+
+    .logo-principal {
+        width: 30%;
+        margin-left: 2em;
+    }
+
+    .contenedor-lista-navbar {
+        margin-left: 0;
+    }
+
+    .lista-navbar {
+        width: 65%;
+    }
+
+    .banner {
+        justify-content: right;
+    }
+
+    .info-banner {
+        margin-right: 6em;
+    }
+
+    .cards {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /* .imagen-card {
+        height: 25vw;
+        object-fit: cover;
+    } */
+
+    #info-bsas {
+        width: 100%;
+        flex-direction: row;
+    }
+    .imagen-hawaii {
+        width: 50%;
+    }
+
+    .contenido-hawaii {
+        width: 50%;
+    }
+
+    
+    form {
+        width: 45%;
+    }
+
+    footer {
+        padding: 0.5em;
+    }
+
+    .links-footer {
+        width: 8em;
+    }
+}
+
+/* Para evento toggle */
+.mostrar {
+    display: flex;
+    position: absolute;
+    top: 4em;
+    background-color: #44403a;
+    width: 100%;
+}
+
+.dropdown {
+    flex-direction: column;
+    padding: 1em;
+}
+
+.li-dropdown {
+    margin: 0.8em;
+    text-transform: uppercase;
+}
+
