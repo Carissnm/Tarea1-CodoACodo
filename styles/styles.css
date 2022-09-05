@@ -384,10 +384,12 @@ footer {
     font-size: 0.75em;
     text-align: center;
     background-color: none;
+    transition: 0.5s;
 }
 
 .links-footer:hover {
-    color: #99d4f8;
+    transition: 0.5s;
+    color: #3baff7;
     transform: scale(1.1);
     /* animation: glow 1s ease-in-out infinite alternate; */
 }
@@ -442,16 +444,16 @@ footer {
         0% {
             opacity: 0;
             transform: translateX(60px);
-          }
+        }
           
           80% {
             transform: translateX(-5px);
-          }
+        }
         
-          100% {
+        100% {
             opacity: 1;
             transform: translateX(0px);
-          }
+        }
     }
 
 }
