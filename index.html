@@ -7,7 +7,6 @@
     <link rel="icon" href="./assets/codoacodo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/tickets.css">
-    <link rel="stylesheet" href="./styles/tmediaqueries.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Tarea1 CAC Carolina Pettinaroli</title>
 </head>
@@ -121,34 +120,42 @@
                 <p class="parrafo-resaltado tickets">VALOR DEL TICKET $200</p>
                 <form action="" class="formulario-tickets">
                     <div class="nombre-apellido-form">
-                        <input 
-                        class="input-nombre" type="text" placeholder="Nombre">
-                        <input class="input-apellido" type="text" placeholder="Apellido">
+                        <div class="nombre-form">
+                            <input 
+                            class="input-nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                            <span class="input-message-error"></span>
+                        </div>
+                        <div class="apellido-form">
+                            <input class="input-apellido" type="text" placeholder="Apellido" required data-tipo="apellido">
+                            <span class="input-message-error"></span>
+                        </div>
                     </div>
                     <div class="email-form">
-                        <input type="email" placeholder="Correo">
+                        <input type="email" placeholder="Correo" required data-tipo="email">
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="candidad-categoria-tickets">
                         <div class="cantidad">
-                            <label for="cantidad">Cantidad</label>
-                            <input class="input-cantidad"  type="number" placeholder="Cantidad">
+                            <label for="cantidad" class="label-cantidad">Cantidad</label>
+                            <input class="input-cantidad"  type="number" placeholder="Cantidad" required data-tipo="cantidad">
+                            <span class="input-message-error"></span>
                         </div>
                         <div class="categoria">
                             <label for="categoria">Categoría</label>
-                            <select name="categoria" id="categoria-tickets">
-                                <option value="Estudiante">Estudiante</option>
-                                <option value="Trainee">Trainee</option>
-                                <option value="Junior">Junior</option>
+                            <select name="categoria" id="categoria-tickets" required data-tipo="categoria">
+                                <option value="">-- Categoría --</option>
+                                <option value="Estudiante" class="option">Estudiante</option>
+                                <option value="Trainee" class="option">Trainee</option>
+                                <option value="Junior" class="option">Junior</option>
                             </select>
                         </div>
-                        
                     </div>
                     <div class="total-pagar-tickets">
 
                     </div>
                     <div class="botones-form-tickets">
                         <button type="reset" class="btn-reset">Borrar</button>
-                        <button class="btn-resumen">Resumen</button>
+                        <button class="btn-resumen" type="submit">Resumen</button>
                     </div>
                 </form>
             </div>
@@ -190,6 +197,6 @@
             </ul>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>

@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .tickets-card1 {
@@ -88,72 +89,59 @@
 }
 
 .email-form {
-    margin-top: 0.1rem;
+    margin-top: 0;
     padding: 0;
     width: 100%;
 }
 
 .email-form input {
     width: 100%;
-}
-
-select {
-    margin-left: 0;
-    padding: 0.3rem;
+    margin-top: 0;
 }
 
 .nombre-apellido-form {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .candidad-categoria-tickets {
     width: 100%;
     display: flex;
-    align-items: center;
-
+    justify-content: space-between;
 }
 
-.candidad-categoria-tickets div {
-    margin-top: 0.2rem;
-    width: 100%;
+.cantidad,
+.categoria {
+    width: 95%;
     display: flex;
     flex-direction: column;
 }
 
-.categoria,
+.cantidad label,
+.categoria label {
+    margin-top: 1rem;
+}
+
+.cantidad input,
+.categoria select {
+    margin-top: 0.5rem;
+}
+
 .cantidad {
-    width: 45%;
+    margin-right: 0.2rem;
 }
-
-.categoria select,
-.cantidad input {
-    margin-top: 0.2rem;
-}
-
-
 
 .categoria {
-    margin-left: 0.4rem;
-    display: flex;
-    flex-direction: column;
-}
-
-select {
-    width: 100%;
-}
-
-.input-cantidad {
-    margin-bottom: 0;
-    height: 29px;
+    margin-left: 0.2rem;
 }
 
 .botones-form-tickets {
     width: 100%;
-    margin-top: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .botones-form-tickets button {
@@ -178,6 +166,48 @@ select {
 
 .btn-resumen {
     margin-left: 0.1rem;
+}
+
+.total-pagar-parrafo {
+    padding: 0.6rem;
+    background-color: #CCE5FF;
+    color: #4689CD;
+    margin: 1.4rem 0 .2rem 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.nombre-form,
+.apellido-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nombre-form input,
+.apellido-form input {
+    width: 98%
+}
+
+.nombre-form input {
+    margin-right: 0.1rem;
+}
+
+.apellido-form input {
+    margin-left: 0.3rem;
+}
+
+span {
+    color: red;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.formulario-tickets .input-container--invalid {
+    border: 1px solid red;
 }
 
 @media screen and (min-width: 481px) {
@@ -215,31 +245,5 @@ select {
         font-size: 2rem;
     }
 
-    .candidad-categoria-tickets {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .candidad-categoria-tickets div {
-        margin-top: 0.2rem;
-        width: 50%;
-    }
-
-    .categoria,
-    .cantidad {
-        display: flex;
-        align-items: right;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .categoria {
-
-    }
-
-    .cantidad {
-        margin-right: 0.4rem;
-    }
 }
 
