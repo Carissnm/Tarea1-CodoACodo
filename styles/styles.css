@@ -11,6 +11,12 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .navbar {
     background-color: #3F3930;
     display: flex;
@@ -84,6 +90,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .info-banner {
@@ -288,10 +295,12 @@ html {
 
 #form-orador {
     padding: 2em;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .parrafo-pequeno {
@@ -315,7 +324,6 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
-    width: 80%;
 }
 
 .inputs {

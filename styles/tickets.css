@@ -1,0 +1,245 @@
+#section-comprar-tickets {
+    padding: 2rem 0;
+}
+
+.comprar-tickets-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tickets-card1,
+.tickets-card2,
+.tickets-card3 {
+    width: 220px;
+    height: 200px;
+    margin: 0.2rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tickets-card1 {
+    border: 2px solid #007BFF;
+} 
+
+.tickets-card2 {
+    border: 2px solid #17A2B8;
+} 
+
+.tickets-card3 {
+    border: 2px solid #FFC107;
+} 
+
+.titulo-tickets,
+.porcentaje-tickets {
+    font-weight: bold;
+}
+
+.subtitulo-tickets {
+    font-size: 0.93rem;
+}
+
+.aclaracion-tickets {
+    font-size: 0.8rem;
+}
+
+.form-comprar-tickets {
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-comprar-tickets .parrafo-resaltado {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.formulario-tickets {
+    display: flex;
+    width: 100%;
+}
+
+.formulario-tickets input,
+.formulario-tickets select {
+    margin-top: 1.5rem;
+    padding: 0.35rem;
+    border: 1px solid #8F8F9D;
+    border-radius: 4px;
+}
+
+.input-nombre,
+.input-apellido {
+    width: 49%;
+}
+
+.formulario-tickets label {
+    margin-top: 0.4rem;
+}
+
+.email-form {
+    margin-top: 0.1rem;
+    padding: 0;
+    width: 100%;
+}
+
+.email-form input {
+    width: 100%;
+}
+
+select {
+    margin-left: 0;
+    padding: 0.3rem;
+}
+
+.nombre-apellido-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.candidad-categoria-tickets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.candidad-categoria-tickets div {
+    margin-top: 0.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria,
+.cantidad {
+    width: 45%;
+}
+
+.categoria select,
+.cantidad input {
+    margin-top: 0.2rem;
+}
+
+
+
+.categoria {
+    margin-left: 0.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    width: 100%;
+}
+
+.input-cantidad {
+    margin-bottom: 0;
+    height: 29px;
+}
+
+.botones-form-tickets {
+    width: 100%;
+    margin-top: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botones-form-tickets button {
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 0.6em 0.7rem;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: 0.5s;
+    background-color: #96C93E;
+}
+
+.botones-form-tickets button:hover {
+    transition: 0.5s;
+    background-color: #71972e;
+}
+
+.btn-reset {
+    margin-right: 0.1rem;
+}
+
+.btn-resumen {
+    margin-left: 0.1rem;
+}
+
+@media screen and (min-width: 481px) {
+    #section-comprar-tickets {
+        width: 50%;
+        justify-self: center;
+    }
+
+    .comprar-tickets-cards-container {
+        flex-direction: row;
+    }
+
+    .tickets-card1,
+    .tickets-card2,
+    .tickets-card3 {
+        height: 180px;
+        padding: 0.5rem;
+        padding-bottom: 0.6rem;
+    }  
+
+    .subtitulo-tickets {
+        font-size: 0.9rem;
+    }
+
+    .aclaracion-tickets {
+        font-size: 0.65rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .form-comprar-tickets {
+        width: 100%;
+    }
+
+    .form-comprar-tickets .parrafo-resaltado {
+        font-size: 2rem;
+    }
+
+    .candidad-categoria-tickets {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .candidad-categoria-tickets div {
+        margin-top: 0.2rem;
+        width: 50%;
+    }
+
+    .categoria,
+    .cantidad {
+        display: flex;
+        align-items: right;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .categoria {
+
+    }
+
+    .cantidad {
+        margin-right: 0.4rem;
+    }
+}
+

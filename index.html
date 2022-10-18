@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/codoacodo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/tickets.css">
+    <link rel="stylesheet" href="./styles/tmediaqueries.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Tarea1 CAC Carolina Pettinaroli</title>
 </head>
@@ -22,7 +24,7 @@
                     <li class="lista"><a href="#conoce-oradores">Los oradores</a></li>
                     <li class="lista"><a href="#info-bsas">El lugar y la fecha</a></li>
                     <li class="lista"><a href="#form-orador">Conviértete en orador</a></li>
-                    <li class="lista"><a href="#" ><span class="item-en-verde">
+                    <li class="lista"><a href="#section-comprar-tickets" ><span class="item-en-verde">
                         Comprar tickets
                     </span></a></li>
                 </ul>
@@ -92,6 +94,65 @@
                 <p class="parrafo-hawaii">Buenos Aires es la gran capital cosmopolita de Argentina. Su centro es la Plaza de Mayo, rodeada de imponentes edificios del siglo XIX, incluida la Casa Rosada, el icónico palacio presidencial que tiene varios balcones. Entre otras atracciones importantes, se incluyen el Teatro Colón, un lujoso teatro de ópera de 1908 con cerca de 2,500 asientos, y el moderno museo MALBA, que exhibe arte latinoamericano.</p>
                 <button class="conoce-mas-hawaii">Conocé más</button>
             </div>
+        </section>
+        <section id="section-comprar-tickets">
+            <div class="comprar-tickets-cards-container">
+                <div class="tickets-card1">
+                    <p class="titulo-tickets">Estudiante</p>
+                    <p class="subtitulo-tickets">Tienen un descuento</p>
+                    <p class="porcentaje-tickets">80%</p>
+                    <p class="aclaracion-tickets">* presentar documentación</p>
+                </div>
+                <div class="tickets-card2">
+                    <p class="titulo-tickets">Trainee</p>
+                    <p class="subtitulo-tickets">Tienen un descuento</p>
+                    <p class="porcentaje-tickets">50%</p>
+                    <p class="aclaracion-tickets">* presentar documentación</p>
+                </div>
+                <div class="tickets-card3">
+                    <p class="titulo-tickets">Junior</p>
+                    <p class="subtitulo-tickets">Tienen un descuento</p>
+                    <p class="porcentaje-tickets">15%</p>
+                    <p class="aclaracion-tickets">* presentar documentación</p>
+                </div>
+            </div>
+            <div class="form-comprar-tickets">
+                <p class="parrafo-pequeno">VENTA</p>
+                <p class="parrafo-resaltado tickets">VALOR DEL TICKET $200</p>
+                <form action="" class="formulario-tickets">
+                    <div class="nombre-apellido-form">
+                        <input 
+                        class="input-nombre" type="text" placeholder="Nombre">
+                        <input class="input-apellido" type="text" placeholder="Apellido">
+                    </div>
+                    <div class="email-form">
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div class="candidad-categoria-tickets">
+                        <div class="cantidad">
+                            <label for="cantidad">Cantidad</label>
+                            <input class="input-cantidad"  type="number" placeholder="Cantidad">
+                        </div>
+                        <div class="categoria">
+                            <label for="categoria">Categoría</label>
+                            <select name="categoria" id="categoria-tickets">
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="Junior">Junior</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="total-pagar-tickets">
+
+                    </div>
+                    <div class="botones-form-tickets">
+                        <button type="reset" class="btn-reset">Borrar</button>
+                        <button class="btn-resumen">Resumen</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
         <section id="form-orador">
             <p class="parrafo-pequeno">CONVIÉRTETE EN UN</p>
